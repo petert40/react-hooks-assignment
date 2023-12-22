@@ -3,6 +3,8 @@ import { useState } from "react";
 
 function Player({name, handleDelete}) {
   let [score, setScore] = useState(0)
+  
+  name = name || "new player";
 
   function addPoint(){
     setScore(() => score + 1)
